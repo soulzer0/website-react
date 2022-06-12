@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 const Header = props => {
     return (
+        <div>
         <nav className='navbar navbar-default navbar-fixed-top'>
             <div className='container'>
                 <div className='navbar-header'>
@@ -24,6 +25,19 @@ const Header = props => {
                 </div>
             </div>
         </nav>
+         <div className='jumbotron text-center'>
+         <h1>Company</h1>
+         <p>We specialize in blablabla</p>
+         <form>
+             <div className='input-group'>
+                 <input type='email' className='form-control' size='50' placeholder='Email Address' required />
+                 <div className='input-group-btn'>
+                     <button type='button' className='btn btn-danger'>Subscribe</button>
+                 </div>
+             </div>
+         </form>
+     </div>
+     </div>
     )
 }
 

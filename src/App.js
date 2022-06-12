@@ -9,6 +9,8 @@ import Portfolio from './components/Portfolio';
 import Pricing from './components/Pricing';
 import Contact from './components/Contact';
 
+import Admin from './admin/Admin';
+
 import Footer from './components/Footer';
 
 class App extends Component {
@@ -17,12 +19,17 @@ class App extends Component {
       <BrowserRouter>
         <div className="App">
           <Header />
+
           <Routes>
+            <Route path='/' element={<Header />} />
             <Route exact path='/' element={<Home />} />
+           
             <Route path='/services' element={<Services />} />
             <Route path='/portfolio' element={<Portfolio />} />
             <Route path='/pricing' element={<Pricing />} />
             <Route path='/contact' element={<Contact />} />
+
+            <Route path='/admin/*' element={<Admin />} />
           </Routes>
 
           <Footer />
