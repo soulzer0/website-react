@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Header = props => {
     return (
@@ -10,15 +11,15 @@ const Header = props => {
                         <span className='icon-bar'></span>
                         <span className='icon-bar'></span>
                     </button>
-                    <a className='navbar-brand' href='#myPage'>Logo</a>
+                    <Link className='navbar-brand' to='/'>Logo</Link>
                 </div>
                 <div className='collapse navbar-collapse' id='myNavbar'>
                     <ul className='nav navbar-nav navbar-right'>
-                        <li><a href='#about'>ABOUT</a></li>
-                        <li><a href='#services'>SERVICES</a></li>
-                        <li><a href='#portfolio'>PORTFOLIO</a></li>
-                        <li><a href='#pricing'>PRICING</a></li>
-                        <li><a href='#contact'>CONTACT</a></li>
+                        <li><Link to='/'>ABOUT</Link></li>
+                        <li><Link to='/services'>SERVICES</Link></li>
+                        <li><Link to='/portfolio'>PORTFOLIO</Link></li>
+                        <li><Link to='/pricing'>PRICING</Link></li>
+                        <li><Link to='/contact'>CONTACT</Link></li>
                     </ul>
                 </div>
             </div>

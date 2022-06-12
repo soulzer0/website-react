@@ -3,7 +3,7 @@ import React from "react";
 const Home = props => {
     return (
         <div>
-              <div className='jumbotron text-center'>
+            <div className='jumbotron text-center'>
                 <h1>Company</h1>
                 <p>We specialize in blablabla</p>
                 <form>
@@ -15,8 +15,6 @@ const Home = props => {
                     </div>
                 </form>
             </div>
-
-            {/* Container (About Section) */}
             <div id='about' className='container-fluid'>
                 <div className='row'>
                     <div className='col-sm-8'>
@@ -30,7 +28,6 @@ const Home = props => {
                     </div>
                 </div>
             </div>
-
             <div className='container-fluid bg-grey'>
                 <div className='row'>
                     <div className='col-sm-4'>
